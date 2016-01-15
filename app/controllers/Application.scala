@@ -12,10 +12,10 @@ class Application extends Controller with TimeHelpers{
 
   }
 
-  def hello = Action {
-    request =>
-      Ok("Saluton Mondo")
-  }
+   def hello = Action {
+     request =>
+       Ok("Saluton Mondo")
+   }
 
   def helloTo(name: String) = Action { request =>
     Ok(s"Hello $name")

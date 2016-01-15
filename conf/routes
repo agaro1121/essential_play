@@ -17,3 +17,9 @@ GET /send controllers.Application.send(username:String,message:Option[String])
 
 GET /option-example controllers.Application.optionExample(arg: Option[Int])
 GET /list-example controllers.Application.listExample(arg: List[Int])
+
+GET  /add/:a/to/:b                       controllers.Calculator.add(a:Int,b:Int)
+GET  /and/:a/with/:b                     controllers.Calculator.and(a:Boolean,b:Boolean)
+GET  /concat/*args                       controllers.Calculator.concat(args: String)
+GET  /sort                               controllers.Calculator.sort(a: List[Int])
+GET  /howto/add/:a/to/:b                 controllers.Calculator.howToAdd(a:Int,b:Int)
