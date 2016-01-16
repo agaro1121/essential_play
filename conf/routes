@@ -23,3 +23,10 @@ GET  /and/:a/with/:b                     controllers.Calculator.and(a:Boolean,b:
 GET  /concat/*args                       controllers.Calculator.concat(args: String)
 GET  /sort                               controllers.Calculator.sort(a: List[Int])
 GET  /howto/add/:a/to/:b                 controllers.Calculator.howToAdd(a:Int,b:Int)
+
+GET /headers                             controllers.HeadersNCookies.headers
+GET /method                              controllers.HeadersNCookies.method
+GET /uri                                 controllers.HeadersNCookies.uri
+GET /path                                controllers.HeadersNCookies.path
+GET /query                               controllers.HeadersNCookies.query
+GET /ohio                                controllers.HeadersNCookies.ohio

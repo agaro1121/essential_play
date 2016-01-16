@@ -24,7 +24,7 @@ class Calculator extends Controller {
 
   // TODO: Create an action called `concat`:
   //
-  //  - accept a rest argument extracted from the URL;
+  //  - accept a rest argument extracted fro m the URL;
   //  - concatenate the URL-decoded path fragments from the argument,
   //    effectively removing slashes from the text;
   //  - return a plain text HTTP 200 response containing the result.
@@ -57,4 +57,6 @@ class Calculator extends Controller {
 
   private def urlDecode(str: String) =
     java.net.URLDecoder.decode(str, "UTF-8")
+
+
 }

@@ -25,8 +25,13 @@ object Parsing extends Controller {
 
   }
 
-  def handleText(data: String): Result = ???
-  def handleJson(data: JsValue): Result = ???
-  def handleXml(data: NodeSeq): Result = ???
+  def handleText(data: String): Result = Ok(s"Result=$data")
+  def handleJson(data: JsValue): Result = Ok(s"Result=${data.toString}")
+  def handleXml(data: NodeSeq): Result = Ok(s"Result=${data.text}")
+
+  def exampleJsonAction = Action(parse.json) { request =>
+    val body: JsValue = request.body
+    Ok(s"Result=$body")
+  }
 
 }
