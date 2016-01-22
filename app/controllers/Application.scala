@@ -1,8 +1,7 @@
 package controllers
 
-import org.joda.time.{DateTimeZone, DateTime}
 import org.joda.time.format.DateTimeFormat
-import play.api._
+import org.joda.time.{DateTime, DateTimeZone}
 import play.api.mvc._
 
 class Application extends Controller with TimeHelpers{
